@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
     <title>Magic Beeper</title>
     <style>
@@ -20,18 +23,35 @@
             font-size: 1.2em;
             color: rgb(134, 186, 218);
         }
+        .container{
+            border: 2px solid rgb(134, 186, 218);
+        }
+        
         </style>
    
 </head>
 <body>
+    <div class="container" style="max-width: 1000px; margin-top: 50px;">
+        <h1 style="text-align: center; color: rgb(247, 249, 251);">The Weaver</h1>
+    <img src="Index.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
+
+
     <audio id="player" controls style="display:none;">
     
     <source src="Pre.mp3" type="audio/mpeg"></audio>
+
+
+    <audio id="Super" controls style="display:none;">
+    <source src="Super.mp3" type="audio/mpeg">
+</audio>
     <form>
-    <input type="text" id="input1" placeholder="Enter Proxy's Name Here" class="form-control" style="text-align: center; color: rgb(134, 186, 218);">
+    <br><br>
+    <input type="text" id="input1" placeholder="Enter Reciever's Name Here" class="form-control" style="text-align: center; color: rgb(134, 186, 218);">
     <button type="button" id="btn" class="btn btn-info form-control" py-click="Index" style="color: rgb(243, 241, 235);">Generate Prescript</button>
+    <br><br>
     </form>
-    <div id="output1" style="text-align: center; margin-top: 20px;"></div>
+    </div>
+    <div id="output1" style="text-align: center; margin-top: 20px;" class="container"></div>
 
     </div>
     <script type="py" src="main.py"></script>

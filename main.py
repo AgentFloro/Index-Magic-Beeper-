@@ -4,7 +4,9 @@ from pyodide.ffi import to_js
 def Index(e):
     input_name = document.getElementById('input1').value
     sound = document.getElementById("player")
-    SweetNumber = math.floor(random.random() * 11)
+    Among = document.getElementById("Super")
+    SweetNumber = math.floor(random.random() * 17)
+    
     Index_Prescript = ""
     if SweetNumber == 0:
         Index_Prescript = (f"[To: {input_name}]: Cheat in the Ict exam")
@@ -28,5 +30,20 @@ def Index(e):
          Index_Prescript = (f"[To: {input_name}]: Bake 100 cookies and send them to the concept incinerator") 
     elif SweetNumber == 10:
          Index_Prescript = (f"[To: {input_name}]: Vouch Pio for the President of the Universe")
+    elif SweetNumber == 11:
+         Index_Prescript = (f"[To: {input_name}]: Go to Sir Velasco. Ask him about the secrets of the universe. If he says no, then go to the next person and ask them.")
+    elif SweetNumber == 12:
+         Index_Prescript = (f"[To: {input_name}]: Call your mom and tell her you love her")
+    elif SweetNumber == 13:
+         Index_Prescript = (f"[To: {input_name}]: Write a letter to your future self")
+    elif SweetNumber == 14:
+         Index_Prescript = (f"[To: {input_name}]: Convert into BVScode")
+    elif SweetNumber == 15:
+         Index_Prescript = (f"[To: {input_name}]: Hack Kurt's roblox account and change his password into ILoveSoftPillows")
+    elif SweetNumber == 16:
+        Index_Prescript = '<img src="https://media.tenor.com/KoY_nSwZIEAAAAAM/super-idol-super-idol-meme.gif" alt="Super Idol" />'
+        Among.play()
+
+    
     sound.play()
     document.getElementById('output1').innerHTML = (Index_Prescript)
