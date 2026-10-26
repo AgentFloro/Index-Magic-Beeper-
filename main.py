@@ -1,11 +1,20 @@
 from pyscript import display, document
 import math, random
 from pyodide.ffi import to_js
+
+sound = document.getElementById("player")
+
+def Saikai(e):
+    Saikai = document.getElementById("Saikai")
+    Saikai.play()
+    Index_Prescript = '<img src="https://i.pinimg.com/originals/73/56/6b/73566baa9541941de51b7875b73f5fea.gif" alt="Super Idol" style="width: 100%; height: auto;" />'
+    sound.play()
+    document.getElementById('output2').innerHTML = (Index_Prescript)
 def Index(e):
     input_name = document.getElementById('input1').value
-    sound = document.getElementById("player")
+    
     Among = document.getElementById("Super")
-    SweetNumber = math.floor(random.random() * 17)
+    SweetNumber = math.floor(random.random() * 30)
     
     Index_Prescript = ""
     if SweetNumber == 0:
@@ -43,6 +52,32 @@ def Index(e):
     elif SweetNumber == 16:
         Index_Prescript = '<img src="https://media.tenor.com/KoY_nSwZIEAAAAAM/super-idol-super-idol-meme.gif" alt="Super Idol" />'
         Among.play()
+    elif SweetNumber == 17:
+        Index_Prescript = (f"[To: {input_name}]: Drink 3 tumblers of Water. And then Do the floss.")
+    elif SweetNumber == 18:
+        Index_Prescript = (f"[To: {input_name}]: Go to Mcdonalds. And Wait for a familiar person to arrive.")
+    elif SweetNumber == 19:
+        Index_Prescript = (f"[To: {input_name}]: Send a message to a loved one that you will have to go to dagestan. Make a memorable goodbye message and stay in OB's basement for a day.")
+    elif SweetNumber == 20:
+        Index_Prescript = (f"[To: {input_name}]: Swim in a pool. And jog. Sink deep into the water slowly. Then Drown. Once you see a rubber ducky, Float up for air.")
+    elif SweetNumber == 21:
+        Index_Prescript = (f"[To: {input_name}]: Do 2 push-ups")
+    elif SweetNumber == 22:
+        Index_Prescript = (f"[To: {input_name}]: Make 10 sand castles. Watch each one get swallowed by the waves. And write what you fetl when doing it.")
+    elif SweetNumber == 23:
+        Index_Prescript = (f"[To: {input_name}]: Walk through a wall. Find a person to relay the massive secret room to. And live in the secret room for the rest of your life.")
+    elif SweetNumber == 24:
+        Index_Prescript = (f"[To: {input_name}]: Take a walk in nature and appreciate the surroundings")
+    elif SweetNumber == 25:
+        Index_Prescript = (f"[To: {input_name}]: Play Animal Crossing.")
+    elif SweetNumber == 26:
+        Index_Prescript = (f"[To: {input_name}]: Ask Rocky Saludes for a hug and tell him you love him")
+    elif SweetNumber == 27:
+        Index_Prescript = (f"[To: {input_name}]: AI generate an apple")
+    elif SweetNumber == 28:
+        Index_Prescript = (f"[To: {input_name}]: Eat an apple.")
+    elif SweetNumber == 29:
+        Index_Prescript = (f"[To: {input_name}]: Set a goal for yourself and work towards it")
 
     
     sound.play()

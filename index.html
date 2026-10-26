@@ -33,6 +33,7 @@
 <body>
     <div class="container" style="max-width: 1000px; margin-top: 50px;">
         <h1 style="text-align: center; color: rgb(247, 249, 251);">The Weaver</h1>
+        <h3 style="text-align: center; color: rgb(247, 249, 251);">Floro Index Prescript Generator V1</h3>
     <img src="Index.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
 
 
@@ -43,17 +44,34 @@
 
     <audio id="Super" controls style="display:none;">
     <source src="Super.mp3" type="audio/mpeg">
-</audio>
+    </audio>
+    <audio id="Saikai" controls style="display:none;">
+    <source src="Saikai.mp3" type="audio/mpeg">
+    </audio>
     <form>
     <br><br>
     <input type="text" id="input1" placeholder="Enter Reciever's Name Here" class="form-control" style="text-align: center; color: rgb(134, 186, 218);">
     <button type="button" id="btn" class="btn btn-info form-control" py-click="Index" style="color: rgb(243, 241, 235);">Generate Prescript</button>
-    <br><br>
+
+    <div class="d-flex justify-content-center my-3">
+    <button type="button" id="btn" class="btn btn-info" py-click="Saikai" style="color: rgb(243, 241, 235);">
+    Waves
+    </button>
+    </div>
+
+    <br>
     </form>
     </div>
+
+
     <div id="output1" style="text-align: center; margin-top: 20px;" class="container"></div>
 
     </div>
+
+
+    <div id="output2" style="text-align: center; margin-top: 20px;" class="container"></div>
+
+    
     <script type="py" src="main.py"></script>
 </body>
 </html>
